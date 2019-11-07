@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AEACB8EA4BE0E43E5575C80 /* Pods_versi_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEDE18003F1330B9DF554A4 /* Pods_versi_app.framework */; };
 		CB04ACDE2374821F000FAB0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB04ACDD2374821F000FAB0B /* AppDelegate.swift */; };
 		CB04ACE02374821F000FAB0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB04ACDF2374821F000FAB0B /* SceneDelegate.swift */; };
 		CB04ACE22374821F000FAB0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB04ACE12374821F000FAB0B /* ViewController.swift */; };
@@ -16,7 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB04ACDA2374821F000FAB0B /* versi-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "versi-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4293A39A6F42F71DD57F9ABF /* Pods-versi-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-versi-app.release.xcconfig"; path = "Target Support Files/Pods-versi-app/Pods-versi-app.release.xcconfig"; sourceTree = "<group>"; };
+		482B61F61432AA7C5A509EA3 /* Pods-versi-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-versi-app.debug.xcconfig"; path = "Target Support Files/Pods-versi-app/Pods-versi-app.debug.xcconfig"; sourceTree = "<group>"; };
+		BDEDE18003F1330B9DF554A4 /* Pods_versi_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_versi_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB04ACDA2374821F000FAB0B /* Versi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB04ACDD2374821F000FAB0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB04ACDF2374821F000FAB0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB04ACE12374821F000FAB0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,24 +35,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEACB8EA4BE0E43E5575C80 /* Pods_versi_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F5C79F57B4840A4348AE474 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				482B61F61432AA7C5A509EA3 /* Pods-versi-app.debug.xcconfig */,
+				4293A39A6F42F71DD57F9ABF /* Pods-versi-app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		877D3E7A22F5B755FA705B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDEDE18003F1330B9DF554A4 /* Pods_versi_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB04ACD12374821F000FAB0B = {
 			isa = PBXGroup;
 			children = (
 				CB04ACDC2374821F000FAB0B /* versi-app */,
 				CB04ACDB2374821F000FAB0B /* Products */,
+				2F5C79F57B4840A4348AE474 /* Pods */,
+				877D3E7A22F5B755FA705B60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		CB04ACDB2374821F000FAB0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB04ACDA2374821F000FAB0B /* versi-app.app */,
+				CB04ACDA2374821F000FAB0B /* Versi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +81,39 @@
 		CB04ACDC2374821F000FAB0B /* versi-app */ = {
 			isa = PBXGroup;
 			children = (
+				CB04ACF32374824F000FAB0B /* model */,
+				CB04ACF223748249000FAB0B /* view */,
+				CB04ACF12374823E000FAB0B /* controller */,
 				CB04ACDD2374821F000FAB0B /* AppDelegate.swift */,
 				CB04ACDF2374821F000FAB0B /* SceneDelegate.swift */,
-				CB04ACE12374821F000FAB0B /* ViewController.swift */,
 				CB04ACE32374821F000FAB0B /* Main.storyboard */,
 				CB04ACE623748221000FAB0B /* Assets.xcassets */,
 				CB04ACE823748221000FAB0B /* LaunchScreen.storyboard */,
 				CB04ACEB23748221000FAB0B /* Info.plist */,
 			);
 			path = "versi-app";
+			sourceTree = "<group>";
+		};
+		CB04ACF12374823E000FAB0B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB04ACE12374821F000FAB0B /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CB04ACF223748249000FAB0B /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CB04ACF32374824F000FAB0B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB04ACEE23748221000FAB0B /* Build configuration list for PBXNativeTarget "versi-app" */;
 			buildPhases = (
+				1C699F2CB94FD0B5EE35B546 /* [CP] Check Pods Manifest.lock */,
 				CB04ACD62374821F000FAB0B /* Sources */,
 				CB04ACD72374821F000FAB0B /* Frameworks */,
 				CB04ACD82374821F000FAB0B /* Resources */,
+				0D869FD32192DCCC906D45F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +135,7 @@
 			);
 			name = "versi-app";
 			productName = "versi-app";
-			productReference = CB04ACDA2374821F000FAB0B /* versi-app.app */;
+			productReference = CB04ACDA2374821F000FAB0B /* Versi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,6 +183,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D869FD32192DCCC906D45F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-versi-app/Pods-versi-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-versi-app/Pods-versi-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-versi-app/Pods-versi-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C699F2CB94FD0B5EE35B546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-versi-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB04ACD62374821F000FAB0B /* Sources */ = {
@@ -282,6 +375,7 @@
 		};
 		CB04ACEF23748221000FAB0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482B61F61432AA7C5A509EA3 /* Pods-versi-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.riahi.versi-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Versi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +394,7 @@
 		};
 		CB04ACF023748221000FAB0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4293A39A6F42F71DD57F9ABF /* Pods-versi-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +405,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.riahi.versi-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Versi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
