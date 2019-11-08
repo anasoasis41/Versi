@@ -24,11 +24,11 @@
                                 <color key="textColor" red="0.2784313725" green="0.46274509800000002" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hwb-ZF-uFF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="400" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hwb-ZF-uFF">
                                 <rect key="frame" x="0.0" y="102" width="414" height="711"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="400" id="jJ2-bt-aqC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="trendingRepoCell" rowHeight="400" id="jJ2-bt-aqC" customClass="TrendingRepoCell" customModule="Versi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jJ2-bt-aqC" id="l1g-eE-1uL">
@@ -38,26 +38,26 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-eV-3Ww">
                                                     <rect key="frame" x="32" y="23" width="350" height="354"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wup-Fo-GSL">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wup-Fo-GSL">
                                                             <rect key="frame" x="0.0" y="10" width="350" height="334"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPO NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQI-dv-pfp">
-                                                                    <rect key="frame" x="103.5" y="0.0" width="143.5" height="33"/>
+                                                                    <rect key="frame" x="103.5" y="0.0" width="143.5" height="33.5"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPO DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXN-rC-hWe">
-                                                                    <rect key="frame" x="95.5" y="43" width="159.5" height="23.5"/>
+                                                                    <rect key="frame" x="95.5" y="43.5" width="159.5" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uFE-W8-sJh">
-                                                                    <rect key="frame" x="101" y="76.5" width="148" height="176.5"/>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uFE-W8-sJh">
+                                                                    <rect key="frame" x="101" y="77" width="148" height="173"/>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nsm-G9-sS2">
-                                                                    <rect key="frame" x="44" y="263" width="262" height="24"/>
+                                                                    <rect key="frame" x="44" y="260" width="262" height="24"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Tk-Xd-N3H">
                                                                             <rect key="frame" x="0.0" y="0.0" width="64" height="24"/>
@@ -130,7 +130,11 @@
                                                                     </constraints>
                                                                 </stackView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsu-s6-kYF" customClass="RoundedBorderButton" customModule="Versi" customModuleProvider="target">
-                                                                    <rect key="frame" x="111.5" y="297" width="127" height="37"/>
+                                                                    <rect key="frame" x="100" y="294" width="150" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="R5u-vt-cUz"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="U59-q1-Rrd"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <state key="normal" title="VIEW README">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,6 +159,16 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="dv6-eV-3Ww" secondAttribute="trailing" constant="12" id="gKT-pp-EIl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="backView" destination="dv6-eV-3Ww" id="maU-sn-zIV"/>
+                                            <outlet property="contributorsLbl" destination="y0e-4r-sYP" id="Eog-D1-aST"/>
+                                            <outlet property="languageLbl" destination="cfW-DV-XqP" id="CP3-5W-wIh"/>
+                                            <outlet property="numberOfForksLbl" destination="SV2-IQ-njm" id="DKd-lU-b5j"/>
+                                            <outlet property="repoDescLbl" destination="wXN-rC-hWe" id="8kG-eX-FPZ"/>
+                                            <outlet property="repoImageView" destination="uFE-W8-sJh" id="ABx-gJ-3KM"/>
+                                            <outlet property="repoNameLbl" destination="fQI-dv-pfp" id="9az-KC-Oo4"/>
+                                            <outlet property="viewRedmeBtn" destination="Gsu-s6-kYF" id="0nG-gB-jOJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

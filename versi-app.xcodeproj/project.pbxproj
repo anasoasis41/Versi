@@ -18,6 +18,7 @@
 		CBAD541023757CCE00B82E42 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */; };
 		CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */; };
 		CBAD54142375B4F600B82E42 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD54132375B4F600B82E42 /* Repo.swift */; };
+		CBAD54162375B7C100B82E42 /* TrendingRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD54152375B7C100B82E42 /* TrendingRepoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
 		CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
 		CBAD54132375B4F600B82E42 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		CBAD54152375B7C100B82E42 /* TrendingRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */,
 				CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */,
+				CBAD54152375B7C100B82E42 /* TrendingRepoCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				CBAD54142375B4F600B82E42 /* Repo.swift in Sources */,
 				CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */,
+				CBAD54162375B7C100B82E42 /* TrendingRepoCell.swift in Sources */,
 				CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */,
 				CB04ACE22374821F000FAB0B /* TrendingFeedVC.swift in Sources */,
 				CB04ACDE2374821F000FAB0B /* AppDelegate.swift in Sources */,
