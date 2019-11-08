@@ -15,6 +15,8 @@
 		CB04ACE723748221000FAB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE623748221000FAB0B /* Assets.xcassets */; };
 		CB04ACEA23748221000FAB0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE823748221000FAB0B /* LaunchScreen.storyboard */; };
 		CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540D23756D6500B82E42 /* SearchVC.swift */; };
+		CBAD541023757CCE00B82E42 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */; };
+		CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CB04ACE923748221000FAB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB04ACEB23748221000FAB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAD540D23756D6500B82E42 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
+		CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		CB04ACF223748249000FAB0B /* view */ = {
 			isa = PBXGroup;
 			children = (
+				CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */,
+				CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -234,8 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */,
+				CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */,
 				CB04ACE22374821F000FAB0B /* TrendingFeedVC.swift in Sources */,
 				CB04ACDE2374821F000FAB0B /* AppDelegate.swift in Sources */,
+				CBAD541023757CCE00B82E42 /* RoundedBorderButton.swift in Sources */,
 				CB04ACE02374821F000FAB0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
