@@ -17,6 +17,7 @@
 		CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540D23756D6500B82E42 /* SearchVC.swift */; };
 		CBAD541023757CCE00B82E42 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */; };
 		CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */; };
+		CBAD54142375B4F600B82E42 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD54132375B4F600B82E42 /* Repo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CBAD540D23756D6500B82E42 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
 		CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
+		CBAD54132375B4F600B82E42 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		CB04ACF32374824F000FAB0B /* model */ = {
 			isa = PBXGroup;
 			children = (
+				CBAD54132375B4F600B82E42 /* Repo.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAD54142375B4F600B82E42 /* Repo.swift in Sources */,
 				CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */,
 				CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */,
 				CB04ACE22374821F000FAB0B /* TrendingFeedVC.swift in Sources */,
