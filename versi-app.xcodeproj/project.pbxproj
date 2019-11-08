@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4AEACB8EA4BE0E43E5575C80 /* Pods_versi_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEDE18003F1330B9DF554A4 /* Pods_versi_app.framework */; };
 		CB04ACDE2374821F000FAB0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB04ACDD2374821F000FAB0B /* AppDelegate.swift */; };
 		CB04ACE02374821F000FAB0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB04ACDF2374821F000FAB0B /* SceneDelegate.swift */; };
-		CB04ACE22374821F000FAB0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB04ACE12374821F000FAB0B /* ViewController.swift */; };
+		CB04ACE22374821F000FAB0B /* TrendingFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB04ACE12374821F000FAB0B /* TrendingFeedVC.swift */; };
 		CB04ACE52374821F000FAB0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE32374821F000FAB0B /* Main.storyboard */; };
 		CB04ACE723748221000FAB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE623748221000FAB0B /* Assets.xcassets */; };
 		CB04ACEA23748221000FAB0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE823748221000FAB0B /* LaunchScreen.storyboard */; };
+		CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540D23756D6500B82E42 /* SearchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		CB04ACDA2374821F000FAB0B /* Versi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB04ACDD2374821F000FAB0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB04ACDF2374821F000FAB0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB04ACE12374821F000FAB0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB04ACE12374821F000FAB0B /* TrendingFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingFeedVC.swift; sourceTree = "<group>"; };
 		CB04ACE42374821F000FAB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB04ACE623748221000FAB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB04ACE923748221000FAB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB04ACEB23748221000FAB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAD540D23756D6500B82E42 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				482B61F61432AA7C5A509EA3 /* Pods-versi-app.debug.xcconfig */,
 				4293A39A6F42F71DD57F9ABF /* Pods-versi-app.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -97,7 +98,8 @@
 		CB04ACF12374823E000FAB0B /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				CB04ACE12374821F000FAB0B /* ViewController.swift */,
+				CB04ACE12374821F000FAB0B /* TrendingFeedVC.swift */,
+				CBAD540D23756D6500B82E42 /* SearchVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -231,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB04ACE22374821F000FAB0B /* ViewController.swift in Sources */,
+				CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */,
+				CB04ACE22374821F000FAB0B /* TrendingFeedVC.swift in Sources */,
 				CB04ACDE2374821F000FAB0B /* AppDelegate.swift in Sources */,
 				CB04ACE02374821F000FAB0B /* SceneDelegate.swift in Sources */,
 			);
