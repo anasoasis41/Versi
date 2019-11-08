@@ -19,6 +19,8 @@
 		CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */; };
 		CBAD54142375B4F600B82E42 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD54132375B4F600B82E42 /* Repo.swift */; };
 		CBAD54162375B7C100B82E42 /* TrendingRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD54152375B7C100B82E42 /* TrendingRepoCell.swift */; };
+		CBAD541A2375CA8F00B82E42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD54192375CA8F00B82E42 /* Constants.swift */; };
+		CBAD541C2375CAC100B82E42 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD541B2375CAC100B82E42 /* DownloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
 		CBAD54132375B4F600B82E42 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		CBAD54152375B7C100B82E42 /* TrendingRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCell.swift; sourceTree = "<group>"; };
+		CBAD54192375CA8F00B82E42 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBAD541B2375CAC100B82E42 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		CB04ACDC2374821F000FAB0B /* versi-app */ = {
 			isa = PBXGroup;
 			children = (
+				CBAD54182375CA7500B82E42 /* Utilities */,
+				CBAD54172375CA5A00B82E42 /* Services */,
 				CB04ACF32374824F000FAB0B /* model */,
 				CB04ACF223748249000FAB0B /* view */,
 				CB04ACF12374823E000FAB0B /* controller */,
@@ -128,6 +134,22 @@
 				CBAD54132375B4F600B82E42 /* Repo.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		CBAD54172375CA5A00B82E42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD541B2375CAC100B82E42 /* DownloadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CBAD54182375CA7500B82E42 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD54192375CA8F00B82E42 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +272,11 @@
 				CBAD54162375B7C100B82E42 /* TrendingRepoCell.swift in Sources */,
 				CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */,
 				CB04ACE22374821F000FAB0B /* TrendingFeedVC.swift in Sources */,
+				CBAD541C2375CAC100B82E42 /* DownloadService.swift in Sources */,
 				CB04ACDE2374821F000FAB0B /* AppDelegate.swift in Sources */,
 				CBAD541023757CCE00B82E42 /* RoundedBorderButton.swift in Sources */,
 				CB04ACE02374821F000FAB0B /* SceneDelegate.swift in Sources */,
+				CBAD541A2375CA8F00B82E42 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
