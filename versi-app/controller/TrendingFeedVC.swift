@@ -18,8 +18,8 @@ class TrendingFeedVC: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.reloadData()
         
-        DownloadService.instance.downloadTrendingReposDictArray { (reposDictArray) in
-            print(reposDictArray)
+        DownloadService.instance.downloadTrendingRepos { (repoArray) in
+            print(repoArray[0].name)
         }
     }
     
