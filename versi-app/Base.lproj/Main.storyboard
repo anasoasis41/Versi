@@ -247,7 +247,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LvH-vL-Uvn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LvH-vL-Uvn">
                                 <rect key="frame" x="0.0" y="145" width="414" height="668"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -383,7 +383,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="searchIconSmall" selectedImage="searchIconSmall" id="9Yz-TX-Otm"/>
                     <connections>
-                        <outlet property="serchField" destination="ed5-Xc-czZ" id="0Fg-hO-amh"/>
+                        <outlet property="searchField" destination="ed5-Xc-czZ" id="xSt-Na-ewp"/>
                         <outlet property="tableView" destination="LvH-vL-Uvn" id="rjG-fO-cbl"/>
                     </connections>
                 </viewController>
