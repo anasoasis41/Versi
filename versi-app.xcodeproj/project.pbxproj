@@ -14,6 +14,7 @@
 		CB04ACE52374821F000FAB0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE32374821F000FAB0B /* Main.storyboard */; };
 		CB04ACE723748221000FAB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE623748221000FAB0B /* Assets.xcassets */; };
 		CB04ACEA23748221000FAB0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE823748221000FAB0B /* LaunchScreen.storyboard */; };
+		CB124210237C0E8700D3C9BC /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12420F237C0E8700D3C9BC /* SearchCell.swift */; };
 		CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540D23756D6500B82E42 /* SearchVC.swift */; };
 		CBAD541023757CCE00B82E42 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */; };
 		CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */; };
@@ -35,6 +36,7 @@
 		CB04ACE623748221000FAB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB04ACE923748221000FAB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB04ACEB23748221000FAB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB12420F237C0E8700D3C9BC /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		CBAD540D23756D6500B82E42 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
 		CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */,
 				CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */,
 				CBAD54152375B7C100B82E42 /* TrendingRepoCell.swift */,
+				CB12420F237C0E8700D3C9BC /* SearchCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAD54142375B4F600B82E42 /* Repo.swift in Sources */,
+				CB124210237C0E8700D3C9BC /* SearchCell.swift in Sources */,
 				CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */,
 				CBAD54162375B7C100B82E42 /* TrendingRepoCell.swift in Sources */,
 				CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */,

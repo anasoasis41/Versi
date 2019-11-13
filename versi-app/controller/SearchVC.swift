@@ -10,10 +10,14 @@ import UIKit
 
 class SearchVC: UIViewController {
 
+    @IBOutlet weak var serchField: RoundedBorderTextField!
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
 }
