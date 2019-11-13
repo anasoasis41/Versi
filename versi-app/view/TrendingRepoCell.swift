@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TrendingRepoCell: UITableViewCell {
 
+    var disposeBag = DisposeBag()
+    
     @IBOutlet weak var repoImageView: UIImageView!
     @IBOutlet weak var repoNameLbl: UILabel!
     @IBOutlet weak var repoDescLbl: UILabel!
@@ -29,6 +33,11 @@ class TrendingRepoCell: UITableViewCell {
         languageLbl.text = repo.language
         contributorsLbl.text = String(describing: repo.numberOfContributors)
         repoUrl = repo.repoUrl
+        
+        viewRedmeBtn.rx.tap.subscribe(onNext: {
+            self.window?.rootViewController?.presentSFSafariVCFor(url: self.repoUrl!)
+        })
+        .disposed(by: disposeBag)
     }
     
     override func layoutSubviews() {

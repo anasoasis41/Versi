@@ -25,9 +25,9 @@ class SearchVC: UIViewController, UITableViewDelegate, UITextFieldDelegate {
     }
     
     func bindElements() {
-        let searchResultsObservable = searchField.rx.textInput.text // Observable property thanks to RxCocoa
+        let searchResultsObservable = searchField.rx.text
             .orEmpty // if is null transform to empty String
-            .debounce(.microseconds(500), scheduler: MainScheduler.instance)
+            .debounce(.milliseconds(500), scheduler: MainScheduler.instance)
             .map {
                 $0.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? ""
         }
@@ -68,6 +68,8 @@ class SearchVC: UIViewController, UITableViewDelegate, UITextFieldDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? SearchCell else { return }
+        let url = cell.repoUrl!
+        self.presentSFSafariVCFor(url: url)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

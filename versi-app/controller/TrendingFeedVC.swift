@@ -20,12 +20,12 @@ class TrendingFeedVC: UIViewController {
     var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         tableView.refreshControl = refreshControll
         refreshControll.tintColor = #colorLiteral(red: 0.2666666667, green: 0.4509803922, blue: 0.9137254902, alpha: 1)
         refreshControll.attributedTitle = NSAttributedString(string: "Fetching Hot Github Repos 🔥", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.2666666667, green: 0.4509803922, blue: 0.9137254902, alpha: 1), NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 16.0)!])
         refreshControll.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         
-        super.viewDidLoad()
         fetchData()
         dataSource.bind(to: tableView.rx.items(cellIdentifier: "trendingRepoCell")) { (row, repo: Repo, cell: TrendingRepoCell) in
             cell.configureCell(repo: repo)

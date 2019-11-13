@@ -15,6 +15,7 @@
 		CB04ACE723748221000FAB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE623748221000FAB0B /* Assets.xcassets */; };
 		CB04ACEA23748221000FAB0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB04ACE823748221000FAB0B /* LaunchScreen.storyboard */; };
 		CB124210237C0E8700D3C9BC /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12420F237C0E8700D3C9BC /* SearchCell.swift */; };
+		CB124213237C3FC300D3C9BC /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB124212237C3FC300D3C9BC /* UIViewControllerExt.swift */; };
 		CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540D23756D6500B82E42 /* SearchVC.swift */; };
 		CBAD541023757CCE00B82E42 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */; };
 		CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */; };
@@ -37,6 +38,7 @@
 		CB04ACE923748221000FAB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB04ACEB23748221000FAB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB12420F237C0E8700D3C9BC /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		CB124212237C3FC300D3C9BC /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		CBAD540D23756D6500B82E42 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		CBAD540F23757CCE00B82E42 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
 		CBAD541123757FA800B82E42 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		CB04ACDC2374821F000FAB0B /* versi-app */ = {
 			isa = PBXGroup;
 			children = (
+				CB124211237C3FAB00D3C9BC /* Extensions */,
 				CBAD54182375CA7500B82E42 /* Utilities */,
 				CBAD54172375CA5A00B82E42 /* Services */,
 				CB04ACF32374824F000FAB0B /* model */,
@@ -137,6 +140,14 @@
 				CBAD54132375B4F600B82E42 /* Repo.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		CB124211237C3FAB00D3C9BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB124212237C3FC300D3C9BC /* UIViewControllerExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CBAD54172375CA5A00B82E42 /* Services */ = {
@@ -272,6 +283,7 @@
 			files = (
 				CBAD54142375B4F600B82E42 /* Repo.swift in Sources */,
 				CB124210237C0E8700D3C9BC /* SearchCell.swift in Sources */,
+				CB124213237C3FC300D3C9BC /* UIViewControllerExt.swift in Sources */,
 				CBAD540E23756D6500B82E42 /* SearchVC.swift in Sources */,
 				CBAD54162375B7C100B82E42 /* TrendingRepoCell.swift in Sources */,
 				CBAD541223757FA800B82E42 /* RoundedBorderTextField.swift in Sources */,
